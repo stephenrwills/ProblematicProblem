@@ -94,7 +94,7 @@ namespace ProblematicProblem
                     }
                     else if(myAnswer == "no")
                     {
-                        cont = true;
+                        addToList = "no";
                     }
                 }
             }
