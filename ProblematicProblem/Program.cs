@@ -6,7 +6,7 @@ namespace ProblematicProblem
 {
 
     class Program
-    {
+    {        
         static Random rng = new Random();
         static bool cont = true;
         static List<string> activities = new List<string>() { "Movies", "Paintball", "Bowling", "Lazer Tag", "LAN Party", "Hiking", "Axe Throwing", "Wine Tasting" };
@@ -94,7 +94,7 @@ namespace ProblematicProblem
                     }
                     else if(myAnswer == "no")
                     {
-                        addToList = "no";
+                        cont = true;
                     }
                 }
             }
@@ -105,7 +105,7 @@ namespace ProblematicProblem
                 for (int i = 0; i < 10; i++)
                 {
                     Console.Write(". ");
-                    Thread.Sleep(500);
+                    Thread.Sleep(5);
                 }
                 Console.WriteLine();
                 Console.WriteLine("Choosing your random activity");
@@ -132,7 +132,7 @@ namespace ProblematicProblem
 
                 Console.WriteLine();
 
-                cont = Console.ReadLine() == "redo" ? true : false; 
+                cont = Console.ReadLine() == "Redo" ? true : false; 
             }
         }
     }
