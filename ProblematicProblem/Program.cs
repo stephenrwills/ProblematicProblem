@@ -22,7 +22,7 @@ namespace ProblematicProblem
             }
             else if (response == "no")
             {
-                cont = false;
+                return;
             }
 
             Console.WriteLine();
